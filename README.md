@@ -1,5 +1,5 @@
 This repository contains course materials for Special Topics: Practical Programming for Biologists (BIO4913) as run during Fall 2025 at Kean University. 
-Materials within are original or adapted from documents provided by Dr. Any Alverson (University of Arkansas) or adapted from Software Carpentry Lessons.
+Materials within are original or adapted from documents provided by Dr. Andy Alverson (University of Arkansas) or adapted from Software Carpentry Lessons.
 Citations for Software Carpentry Lessons:
 
 Gabriel A. Devenyi (Ed.), Gerard Capes (Ed.), Colin Morris (Ed.), Will Pitchers (Ed.),
