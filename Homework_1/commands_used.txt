@@ -1,0 +1,149 @@
+    1  cd /home/shared/
+    2  ls
+    3  mkdir hasita
+    4  mkdir elie
+    5  mkdir juhi
+    6  mkdir jonathan
+    7  mkdir lu
+    8  mkdir shari
+    9  mkdir caroline
+   10  mkdir kena
+   11  mkdir sariyah
+   12  ls
+   13  mkdir FA25_coding
+   14  mkdir FA25_coding/intro_files
+   15  ls
+   16  conda create -n ncbi_datasets
+   17  conda activate ncbi_datasets
+   18  conda init bash
+   19  conda activate ncbi_datasets
+   20  echo 'source "$(conda info --base)/etc/profile.d/conda.sh"' >> ~/.bashrc
+   21  source ~/.bashrc
+   22  conda activate ncbi_tools
+   23  conda activate ncbi_datasets
+   24  datasets download genome accession GCF_047948215.1 --include genome
+   25  cd
+   26  datasets download genome accession GCF_047948215.1 --include genome
+   27  # make sure you're inside your ncbi env
+   28  conda install -c conda-forge -c bioconda ncbi-datasets-cli
+   29  datasets download genome accession GCF_047948215.1 --include genome
+   30  unzip ncbi_dataset.zip 
+   31  mv ncbi_dataset/data/GCF_047948215.1/GCF_047948215.1_ASM4794821v1_genomic.fna /home/shared/FA25_coding/intro_files/SLF_genome.fasta
+   32  la
+   33  ls
+   34  rm -r *
+   35  ls
+   36  cd /home/shared/
+   37  ls
+   38  mkdir brlevine
+   39  ls
+   40  cd FA25_coding/intro_files/
+   41  ls
+   42  mv ~/* ./
+   43  ls
+   44  mv ~/BTS_data.txt .
+   45  ls
+   46  exit
+   47  cd /home/shared/
+   48  ls
+   49  cd
+   50  ls /home/shared/FA25_coding/intro_files/
+   51  cd /home/shared/
+   52  ls
+   53  cd
+   54  pwd
+   55  cd /home/shared/kena/
+   56  ls
+   57  ls
+   58  cd
+   59  exit
+   60  cd /home/shared/FA25_coding/intro_files/
+   61  less -S SLF_genome.fasta 
+   62  cd ../../brlevine/
+   63  ls
+   64  mkdir Homework_1
+   65  cd Homework_1/
+   66  cd ../
+   67  ls
+   68  rm -r Homework_1/
+   69  ls
+   70  clear
+   71  cd
+   72  pwd
+   73  cd /home/shared/brlevine/
+   74  mkdir Homework_1
+   75  cd Homework_1/
+   76  echo "Homework #1 - Brenna Levine" > report.txt
+   77  less -S report.txt 
+   78  echo >> report.txt 
+   79  less -S report.txt 
+   80  ls -lth /home/shared/FA25_coding/intro_files/SLF_genome.fasta 
+   81  clear
+   82  ls -lth /home/shared/FA25_coding/intro_files/SLF_genome.fasta 
+   83  ls -lth /home/shared/FA25_coding/intro_files/SLF_genome.fasta | cut -f5
+   84  echo "2.1G" >> report.txt 
+   85  less -S report.txt 
+   86  ls -lth /home/shared/FA25_coding/intro_files/SLF_genome.fasta | cut -f 5
+   87  clear
+   88  grep ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta 
+   89  grep ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | wc -l
+   90  echo > report.txt 
+   91  echo "Homework #1 - Brenna Levine" > report.txt
+   92  echo >> report.txt 
+   93  echo "2.1G" >> report.txt 
+   94  echo >> report.txt 
+   95  grep ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | wc -l >> report.txt 
+   96  less -S report.txt 
+   97  history
+   98  echo "2.1G" >> report.txt 
+   99  less -S report.txt 
+  100  nano report.txt 
+  101  lear
+  102  clear
+  103  grep ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta > chromosomes_names.txt
+  104  less -S chromosomes_names.txt 
+  105  ls -lth
+  106  echo >> report.txt 
+  107  cat chromosomes_names.txt >> report.txt 
+  108  less -S report.txt 
+  109  echo >> report.txt 
+  110  clear
+  111  grep -v ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta > dna.txt
+  112  less -S dna.txt 
+  113  wc -c dna.txt >> report.txt 
+  114  less -S report.txt 
+  115  less -S /home/shared/FA25_coding/intro_files/SLF_genome.fasta 
+  116  nano report.txt 
+  117  cat report.txt 
+  118  echo >> report.txt 
+  119  echo "Base Count" >> report.txt 
+  120  less -S report.txt 
+  121  grep -v ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | grep -o -i "A" | wc -l
+  122  echo "A $(grep -v ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | grep -o -i "A" | wc -l)" >> report.txt 
+  123  less -S report.txt 
+  124  cp report.txt ~/
+  125  pwd
+  126  clear
+  127  pwd
+  128  echo "C $(grep -v ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | grep -o -i "C" | wc -l)" >> report.txt 
+  129  echo "T $(grep -v ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | grep -o -i "T" | wc -l)" >> report.txt 
+  130  echo "G $(grep -v ">" /home/shared/FA25_coding/intro_files/SLF_genome.fasta | grep -o -i "G" | wc -l)" >> report.txt 
+  131  less -S report.txt 
+  132  less -S report.txt 
+  133  ls /home/shared/FA25_coding/intro_files/SLF_genome.fasta 
+  134  ls -lth /home/shared/FA25_coding/intro_files/SLF_genome.fasta 
+  135  less -S report.txt 
+  136  nano report.txt 
+  137  LS
+  138  ls
+  139  wc -c dna.txt | cut -f1
+  140  wc -c dna.txt | cut -f 1
+  141  tr -d '\n' dna.txt | wc -c | cut -f 1
+  142  head -5 dna.txt 
+  143  cat -A dna.txt 
+  144  wc -c dna.txt
+  145  cat -E dna.txt | head
+  146  ls
+  147  touch commands_used.txt
+  148  rm commands_used.txt 
+  149  history > commands_used.txt
